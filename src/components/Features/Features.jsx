@@ -10,16 +10,15 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-
 const Features = () => {
   var settings = {
     dots: false,
     infinite: true,
-    autoplay:false,
-    autoplaySpeed:1500,
+    autoplay: false,
+    autoplaySpeed: 1500,
     slidesToShow: 4,
     slidesToScroll: 1,
-    
+
     responsive: [
       {
         breakpoint: 1024,
@@ -45,8 +44,8 @@ const Features = () => {
           slidesToShow: 2,
           slidesToScroll: 2,
           autoplay: true,
-          prevArrow:false,
-          nextArrow:false,
+          prevArrow: false,
+          nextArrow: false,
         },
       },
       {
@@ -54,8 +53,8 @@ const Features = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          prevArrow:false,
-          nextArrow:false,
+          prevArrow: false,
+          nextArrow: false,
         },
       },
     ],
@@ -65,33 +64,31 @@ const Features = () => {
     {
       id: 0,
       image: feature1,
-      title: "Discover the possibilities",
-      des: "With nearly half a million attractions, hotels & more, you're sure to find joy.",
+      title: "Hassle-Free Bookings",
+      des: "Easily book a ride to and from Mussoorie with our user-friendly platform.",
     },
     {
       id: 1,
       image: feature2,
-      title: "Enjoy deals & delights",
-      des: "Quality activities. Great prices. Plus, earn credits to save more.",
+      title: "Affordable Travel Packages",
+      des: "Get the best deals on local tours, taxi services, and sightseeing adventures.",
     },
     {
       id: 2,
       image: feature3,
-      title: "Exploring made easyt",
-      des: "Book last minute, skip lines &amp; get free cancellation for easier exploring.",
+      title: "Local Expertise",
+      des: "Our drivers know Mussoorie inside and out, ensuring a smooth and scenic journey.",
     },
-
     {
       id: 3,
       image: feature4,
-      title: "Travel you can trust",
-      des: "Read reviews & get reliable customer support. We're with you at every step.",
+      title: "Safe and Reliable",
+      des: "Enjoy peace of mind with professional drivers and well-maintained vehicles.",
     },
   ];
 
   return (
     <>
-    
       <section className="feature-section">
         <Container>
           <Row>
@@ -99,15 +96,17 @@ const Features = () => {
               <Slider {...settings}>
                 {featureList.map((feature, inx) => {
                   return (
-                    <Card key={inx}>
+                    <Card key={inx} className="feature-card">
                       <Card.Img
                         variant="top"
                         src={feature.image}
                         className="img-fluid"
                         alt={feature.title}
                       />
-                      <Card.Title>{feature.title}</Card.Title>
-                      <Card.Text>{feature.des}</Card.Text>
+                      <Card.Body>
+                        <Card.Title className="feature-title">{feature.title}</Card.Title>
+                        <Card.Text className="feature-des">{feature.des}</Card.Text>
+                      </Card.Body>
                     </Card>
                   );
                 })}

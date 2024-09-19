@@ -7,37 +7,42 @@ import "../Banner/banner.css"
 const Banner = () => {
   return (
     <>
-      <section className="slider">
-        <Carousel variant="dark">
-          <Carousel.Item>
-            <img src="https://as2.ftcdn.net/v2/jpg/04/70/68/73/1000_F_470687328_X5mqwze2IFjvzO62cTima3wdk9HjBzMC.jpg" className="d-block w-100" alt="First slide" />
-            <Carousel.Caption>
-              <div className="slider_des">
-                <h5 className="heading">
-                  JOURNEY TO <span>EXPLORE MUSSORIE</span>
-                </h5>
-              
-              </div>
-            </Carousel.Caption>
-          </Carousel.Item>
+   <section className="slider">
+  <Carousel variant="dark">
+    <Carousel.Item>
+      <img
+        src={sliderImg}
+        className="d-block w-100"
+        alt="First slide"
+      />
+      <Carousel.Caption>
+        <div className="slider_des">
+          <h5 className="heading">
+            DISCOVER THE <span>CHARM OF MUSSOORIE</span>
+          </h5>
+        </div>
+      </Carousel.Caption>
+    </Carousel.Item>
 
-          <Carousel.Item>
-            <img src={sliderImg1} className="d-block w-100" alt="First slide" />
-            <Carousel.Caption>
-              <div className="slider_des">
-                <h5 className="heading">
-                  BEAUTIFUL PLACE <span>TO VISIT</span>
-                </h5>
-                <p className="sub_text">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s,
-                </p>
-              </div>
-            </Carousel.Caption>
-          </Carousel.Item>
-        </Carousel>
-      </section>
+    <Carousel.Item>
+      <img src={sliderImg1} className="d-block w-100" alt="Second slide" />
+      <Carousel.Caption>
+        <div className="slider_des">
+          <h5 className="heading">
+            A <span>PICTURESQUE GETAWAY</span> IN THE HILLS
+          </h5>
+          <p className="sub_text">
+            Explore the breathtaking landscapes and serene ambiance of
+            Mussoorie. Perfect for nature lovers and adventure seekers,
+            Mussoorie offers an unforgettable escape from the hustle and bustle
+            of city life.
+          </p>
+        </div>
+      </Carousel.Caption>
+    </Carousel.Item>
+  </Carousel>
+</section>
+
     </>
   );
 };

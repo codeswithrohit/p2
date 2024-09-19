@@ -33,7 +33,7 @@ const Footer = () => {
     <footer className="pt-5">
       <Container>
         <Row>
-          <Col md="3" sm="12" className="quick_link mt-3 mt-md-0 ">
+          {/* <Col md="3" sm="12" className="quick_link mt-3 mt-md-0 ">
             <h4 className="mt-lg-0 mt-sm-3">Company </h4>
             <ListGroup variant="flush">
               <ListGroup.Item>
@@ -62,7 +62,7 @@ const Footer = () => {
               </ListGroup.Item>
              
             </ListGroup>
-          </Col>
+          </Col> */}
           <Col md="3" sm="12" className="quick_link mt-3 mt-md-0 ">
           <h4 className="mt-lg-0 mt-sm-3">Quick Link </h4>
           <ListGroup variant="flush">
@@ -82,23 +82,23 @@ const Footer = () => {
           <h4 className="mt-lg-0 mt-sm-3">Contact Info </h4>
 
           <div className="d-flex align-items-center">
-            <p className="pb-2"> Dehradun, Uttarakhand, India</p>
+            <p className="pb-2"> Mussorie, Uttarakhand, India</p>
           </div>
 
           <div className="d-flex align-items-top my-2">
           <i className="bi bi-geo-alt me-3"></i>
-          <a target="_blank" href="mailto:rawatcoder@gmail.com" className="d-block" >rawatcoder@gmail.com</a>
+          <a target="_blank" href="mailto:virendrapunder@gmail.com" className="d-block" >virendrapunder@gmail.com</a>
           </div>
           <div className="d-flex align-items-top ">
           <i className="bi bi-telephone me-3"></i>
-          <a target="_blank" href="tel:9876543210" className="d-block" >9876543210</a>
+          <a target="_blank" href="tel:9419705974" className="d-block" >9419705974</a>
           </div>
          
           </Col>
         </Row>
         <Row className="py-2 bdr mt-3">
         <Col className="col copyright">
-        <p className="text-light">   @ 2024. rawatcoder All rights reserved </p> 
+        <p className="text-light">   @ 2024. TechBabua All rights reserved </p> 
         </Col>
         </Row>
 
